@@ -2,4 +2,4 @@
 # Shows Port stats
 netstat -tulnp
 # Active UNIX domain sockets
-netstat -lx
+netstat -lx -p
