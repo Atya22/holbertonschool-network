@@ -1,10 +1,3 @@
 #!/usr/bin/env bash
 # Script to display listening TCP and UDP ports
-
-# Display listening TCP ports
-echo "Listening TCP Ports:"
-sudo lsof -iTCP -sTCP:LISTEN -n -P
-
-# Display listening UDP ports
-echo "Listening UDP Ports:"
-sudo lsof -iUDP -n -P
+netstat -tupn
